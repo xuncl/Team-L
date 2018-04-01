@@ -45,9 +45,9 @@ contract AdvancedPayroll {
             lastPayday = now;
             employee.transfer(payment);
         } else {
-	        // 上次地址为空时，直接重置工资时间
-	        lastPayday = now;
-	    }
+	    // 上次地址为空时，直接重置工资时间
+	    lastPayday = now;
+	}
     }
     
     function addFund() payable returns (uint) {
